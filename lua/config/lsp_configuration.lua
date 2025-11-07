@@ -21,39 +21,36 @@ vim.lsp.enable({
 })
 
 -- Configuring Language Server
-
--- nixd
-vim.lsp.config("nixd", {
-	settings = {
-		["nixd"] = {
-			formatter = {
-				command = "nixfmt"
-			},
-		},
-	},
-})
-
 -- rust_analyzer
 vim.lsp.config("rust_analyzer", {
 	settings = {
-		["nixd"] = {
+		["rustfmt"] = {
 			formatter = {
 				command = "rustfmt"
 			},
 		},
 	},
 })
--- MySQL
--- vim.lsp.config("sqls", {
---         settings = {
---       	  ["sqls"] = {
---       		  formatter = {
---       			  command = "sql-formatter"
---       		  },
---       	  },
---         },
--- })
--- html
+
+vim.lsp.config("nixd", {
+	settings = {
+		["alejandra"] = {
+			formatter = {
+				command = "alejandra"
+			},
+		},
+	},
+})
+
+vim.lsp.config("sqls", {
+	settings = {
+		["sqls"] = {
+			formatter = {
+				command = "sqlfluff"
+			},
+		},
+	},
+})
 vim.lsp.config("html", {
 	settings = {
 		["html"] = {

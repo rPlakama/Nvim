@@ -3,7 +3,7 @@ vim.opt.mouse = ''
 -- LSP
 vim.keymap.set('n', '<leader>lf', vim.lsp.buf.format)
 -- Nvim Tree
-vim.keymap.set({ "n", "v" }, "<C-n>", "<cmd>Yazi<CR>")
+vim.keymap.set({ "n", "v" }, "<C-n>", "<cmd>Oil<CR>")
 -- Fzf binds
 vim.keymap.set("n", "<leader>ff", "<cmd>FzfLua <CR>", { silent = true, desc = "FzfLua ― The Goat" })
 vim.keymap.set("n", "<leader>fs", "<cmd> FzfLua files <CR>", { silent = true, desc = "FzfLua files search" })
@@ -50,13 +50,3 @@ end)
 
 -- CD to path
 vim.keymap.set("n", "<leader>cd", "<cmd>cd %:p:h<CR>", { silent = true, desc = "Jump to Current Directory."})
-
--- -- Basic autocommands
-local augroup = vim.api.nvim_create_augroup("UserConfig", {})
--- Hightlight yank
-vim.api.nvim_create_autocmd("TextYankPost", {
-	group = augroup,
-	callback = function()
-		vim.highlight.on_yank()
-	end,
-})
