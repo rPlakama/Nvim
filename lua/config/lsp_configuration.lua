@@ -2,6 +2,7 @@
 
 vim.lsp.enable({
 	"nixd",
+	"ruff",
 	"gopls",
 	"fish_lsp",
 	"lua_ls",
@@ -53,7 +54,7 @@ vim.lsp.config("sqls", {
 })
 vim.lsp.config("html", {
 	settings = {
-		["html"] = {
+		["vscode-html-language-server"] = {
 			formatter = {
 				command = "prettier"
 			},
