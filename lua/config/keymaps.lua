@@ -5,8 +5,6 @@ vim.keymap.set('n', '<leader>lf', vim.lsp.buf.format)
 -- Nvim Tree
 vim.keymap.set({ "n", "v" }, "<C-n>", "<cmd>Oil<CR>")
 
-vim.keymap.set({ "n", "v"}, "z=", "<cmd>Fzf spell_suggest<CR>", { silent = true, desc = "FzfLua spell suggestion" })
--- Spell binds
 vim.keymap.set("n", "<C-1>", "<cmd>setlocal spell spelllang=pt | echo 'Spell Portuguese(PT)'<CR>",
 	{ silent = true, desc = "Português" })
 vim.keymap.set("n", "<C-2>", "<cmd>setlocal spell spelllang=en_us | echo 'Spell English(US)'<CR>",
@@ -42,4 +40,4 @@ vim.keymap.set("n", "<leader>pa", function()
 end)
 
 -- CD to path
-vim.keymap.set("n", "<leader>cd", "<cmd>cd %:p:h<CR>", { silent = true, desc = "Jump to Current Directory."})
+vim.keymap.set("n", "<leader>cd", "<cmd>cd %:p:h<CR>", { silent = true, desc = "Jump to Current Directory." })
