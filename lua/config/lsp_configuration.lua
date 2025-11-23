@@ -12,7 +12,8 @@ vim.lsp.enable({
 	"sqls",
 	"tinymist",
 	"qmlls",
-	"html",
+	"superhtml",
+	"jinja-lsp",
 	"cssls",
 	"rust_analyzer",
 	"markdown_oxide",
@@ -21,8 +22,6 @@ vim.lsp.enable({
 
 })
 
--- Configuring Language Server
--- rust_analyzer
 vim.lsp.config("rust_analyzer", {
 	settings = {
 		["rustfmt"] = {
@@ -48,15 +47,6 @@ vim.lsp.config("sqls", {
 		["sqls"] = {
 			formatter = {
 				command = "sqlfluff"
-			},
-		},
-	},
-})
-vim.lsp.config("html", {
-	settings = {
-		["vscode-html-language-server"] = {
-			formatter = {
-				command = "prettier"
 			},
 		},
 	},
