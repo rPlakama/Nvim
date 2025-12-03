@@ -19,6 +19,7 @@ vim.lsp.enable({
 	"markdown_oxide",
 	"clangd",
 	"jdtls",
+	"hls",
 
 })
 
@@ -27,16 +28,6 @@ vim.lsp.config("rust_analyzer", {
 		["rustfmt"] = {
 			formatter = {
 				command = "rustfmt"
-			},
-		},
-	},
-})
-
-vim.lsp.config("nixd", {
-	settings = {
-		["alejandra"] = {
-			formatter = {
-				command = "alejandra"
 			},
 		},
 	},
