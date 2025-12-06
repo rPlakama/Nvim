@@ -23,7 +23,6 @@ function MyStatusLine()
 	end
 
 	return table.concat({
-		"%#Normal#",
 		branch,
 		" %f",
 		"%m",
