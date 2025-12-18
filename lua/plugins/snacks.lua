@@ -20,7 +20,7 @@ return {
 			words = { enabled = true },
 		},
 		keys = {
-			--{ "<leader>fs", function() Snacks.picker.smart() end,           desc = "Smart Find Files" },
+			{ "<leader>fs", function() Snacks.picker.smart() end,           desc = "Smart Find Files" },
 			{ "<leader>fm", function() Snacks.picker.marks() end, desc = "Marks" },
 			{ "<leader>fa", function() Snacks.picker.buffers() end,         desc = "Buffers" },
 			{ "<leader>fg", function() Snacks.picker.grep() end,            desc = "Grep" },

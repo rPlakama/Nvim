@@ -63,6 +63,16 @@ vim.lsp.config("tinymist", {
 	},
 })
 
+vim.lsp.config("nixd", {
+	settings = {
+		["nixd"] = {
+			formatter = {
+				command = "nixfmt"
+			},
+		},
+	},
+})
+
 vim.lsp.config("fish_lsp", {
 	settings = {
 		["fish_lsp"] = {
