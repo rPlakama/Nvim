@@ -1,6 +1,6 @@
 -- Base Configuration --
 vim.opt.clipboard = "unnamedplus"
-vim.opt.termguicolors = false
+vim.opt.termguicolors = true
 vim.o.shortmess = 'I'
 vim.opt.conceallevel = 0
 vim.opt.number = true
