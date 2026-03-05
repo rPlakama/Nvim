@@ -7,7 +7,5 @@ require("config.opts.netrw")
 require("config.opts.etc")
 require("config.keymaps")
 require("config.yank-highlight")
-require("local.statusbar")
 require("local.remove_trail")
 vim.cmd("colorscheme base16-chalk")
-
