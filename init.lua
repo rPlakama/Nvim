@@ -1,5 +1,4 @@
 require("config.lazy")
-require("config.lsp_configuration")
 require("config.opts.base")
 require("config.opts.appearance")
 require("config.opts.indentation")
@@ -11,5 +10,4 @@ require("config.yank-highlight")
 require("local.statusbar")
 require("local.remove_trail")
 vim.cmd("colorscheme base16-chalk")
-
 
